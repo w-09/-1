@@ -68,6 +68,110 @@ h1 {
 <body>
     <img src="https://i.postimg.cc/ZKWfsQD9/Logo-02-0.png" alt="Logo" class="center-image">
                       <h1>  歡 迎 光 臨，亞 灣 工 務 所</h1>
+  
+                      <!DOCTYPE html>
+                      <html lang="zh-TW">
+                      <head>
+                          <meta charset="UTF-8">
+                          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                          <title>Welcome Page</title>
+                          <style>
+                              .center-image {
+                                  display: block;
+                                  margin: 0 auto;
+                                  max-width: 100%;
+                                  height: auto;
+                                  margin-bottom: 20px;
+                              }
+                              .btn-container {
+                                  display: flex;
+                                  flex-wrap: wrap;
+                                  justify-content: space-around; /* 将子元素平均分布在容器内 */
+                                  gap: 20px; /* 元素之间的间距 */
+                                  padding: 20px;
+                                  max-width: 75%; /* 让容器宽度填满父元素 */
+                                  margin: 0 auto;
+                              }
+                              .btn-group {
+                                  background-color: rgba(119, 117, 117, 0.315); /* 半透明黑色背景 */
+                                  padding: 20px;
+                                  border-radius: 10px;
+                                  flex: 1; /* 让每个 .btn-group 元素均分剩余空间 */
+                                  text-align: left; /* 文字左对齐 */
+                              }
+                              .btn {
+                                  display: block;
+                                  padding: 25px 45px;
+                                  background-color: #4d4d4d;
+                                  color: #ffffff;
+                                  text-decoration: none;
+                                  border-radius: 8px;
+                                  font-size: 18px;
+                                  margin-bottom: 15px;
+                                  width: 75%; /* 按钮宽度填满 .btn-group 的宽度 */
+                                  transition: background-color 0.3s ease;
+                              }
+                              .btn:hover {
+                                  background-color: #999999;
+                              }
+                              h1 {
+                                  color: #5e5e5eb2; /* 紅色文字 */
+                                  font-family: Arial, sans-serif; /* 設置字體 */
+                              }
+                              .countdown {
+                                  font-size: 24px;
+                                  color: #ffffff;
+                                  margin: 20px auto;
+                                  padding: 10px;
+                                  background-color: rgba(255, 255, 255, 0.7); /* 半透明背景以提高可讀性 */
+                                  border-radius: 10px;
+                                  max-width: 400px;
+                              }
+                              .calculator {
+                                  margin: 20px auto;
+                                  padding: 20px;
+                                  background-color: rgba(0, 0, 0, 0.7);
+                                  border-radius: 10px;
+                                  color: #ffffff;
+                                  max-width: 400px;
+                                  text-align: left;
+                              }
+                              .calculator label {
+                                  display: block;
+                                  margin-bottom: 10px;
+                              }
+                              .calculator input {
+                                  display: block;
+                                  margin-bottom: 10px;
+                                  padding: 10px;
+                                  width: 100%;
+                                  border-radius: 5px;
+                                  border: none;
+                              }
+                              .calculator button {
+                                  background-color: #4d4d4d;
+                                  color: #ffffff;
+                                  padding: 10px 20px;
+                                  border: none;
+                                  border-radius: 5px;
+                                  cursor: pointer;
+                              }
+                              .calculator button:hover {
+                                  background-color: #999999;
+                              }
+                              .result {
+                                  font-size: 18px;
+                                  margin-top: 20px;
+                              }
+                          </style>
+                      </head>
+                      <body>
+                        <div class="countdown" id="countdown">倒數計時器</div>
+                          <div class="btn-container">
+                              <!-- 你的按鈕組內容 -->
+                          </div>
+                      </body>
+                      </html>                     
 
     <!-- 按鈕列表 -->
     <div class="btn-container">
@@ -133,4 +237,224 @@ h1 {
             </div>
         </div>
 </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        .center-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* 将子元素平均分布在容器内 */
+            gap: 20px; /* 元素之间的间距 */
+            padding: 20px;
+            max-width: 75%; /* 让容器宽度填满父元素 */
+            margin: 0 auto;
+        }
+        .btn-group {
+            background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1; /* 让每个 .btn-group 元素均分剩余空间 */
+            text-align: left; /* 文字左对齐 */
+        }
+        .btn {
+            display: block;
+            padding: 25px 45px;
+            background-color: #4d4d4d;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-bottom: 15px;
+            width: 75%; /* 按钮宽度填满 .btn-group 的宽度 */
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #999999;
+        }
+        h1 {
+            color: #5e5e5eb2; /* 紅色文字 */
+            font-family: Arial, sans-serif; /* 設置字體 */
+        }
+        .countdown {
+            font-size: 24px;
+            color: #ffffff;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7); /* 半透明背景以提高可讀性 */
+            border-radius: 10px;
+            max-width: 400px;
+        }
+        .calculator {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            color: #ffffff;
+            max-width: 400px;
+            text-align: left;
+        }
+        .calculator label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .calculator input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+        }
+        .calculator button {
+            background-color: #4d4d4d;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .calculator button:hover {
+            background-color: #999999;
+        }
+        .result {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="countdown" id="countdown">計算式</div>
+
+    <!-- 工期計算器 -->
+    <div class="calculator">
+        <h2>工期計算器</h2>
+        <label for="start-date">開始日期:</label>
+        <input type="date" id="start-date">
+        <label for="end-date">結束日期:</label>
+        <input type="date" id="end-date">
+        <button onclick="calculateDuration()">計算工期</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <!-- 按鈕列表 -->
+    <div class="btn-container">
+        <!-- 你的按鈕組內容 -->
+    </div>
+
+    <script>
+        // 倒數計時功能
+        function updateCountdown() {
+            var targetDate = new Date('2027-1-14'); // 设定目标日期和时间
+            var now = new Date();
+            var timeDifference = targetDate - now;
+
+            // 如果时间已到
+            if (timeDifference <= 0) {
+                document.getElementById('countdown').innerText = "時間到囉";
+                return;
+            }
+
+            var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            // 更新倒计时显示
+            document.getElementById('countdown').innerText = 
+                `前鎮亞灣社宅工期剩餘時間: ${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒`;
+
+            // 每秒更新一次
+            setTimeout(updateCountdown, 1000);
+        }
+
+        // 调用函数启动倒计时
+        updateCountdown();
+
+        // 工期计算器功能
+        function calculateDuration() {
+            // 獲取日期
+            var startDate = new Date(document.getElementById('start-date').value);
+            var endDate = new Date(document.getElementById('end-date').value);
+
+            // 檢查日期是否有效
+            if (isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
+                alert("請輸入有效的日期");
+                return;
+            }
+
+            // 計算工期（天數）
+            var timeDifference = endDate - startDate;
+            var daysDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
+
+            // 顯示結果
+            document.getElementById('result').innerText = '工期: ' + daysDifference + ' 天';
+        }
+    </script>
+    
+    <script>
+        // 倒數計時功能
+        function updateCountdown() {
+            var targetDate = new Date('2027-1-14'); // 设定目标日期和时间
+            var now = new Date();
+            var timeDifference = targetDate - now;
+
+            // 如果时间已到
+            if (timeDifference <= 0) {
+                document.getElementById('countdown').innerText = "時間到囉";
+                return;
+            }
+
+            var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            // 更新倒计时显示
+            document.getElementById('countdown').innerText = 
+                `前鎮亞灣社宅工期剩餘時間: ${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒`;
+
+            // 每秒更新一次
+            setTimeout(updateCountdown, 1000);
+        }
+
+        // 调用函数启动倒计时
+        updateCountdown();
+
+        // 工期计算器功能
+        function calculateDuration() {
+            // 獲取日期
+            var startDate = new Date(document.getElementById('start-date').value);
+            var endDate = new Date(document.getElementById('end-date').value);
+
+            // 檢查日期是否有效
+            if (isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
+                alert("請輸入有效的日期");
+                return;
+            }
+
+            // 計算工期（天數）
+            var timeDifference = endDate - startDate;
+            var daysDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
+
+            // 顯示結果
+            document.getElementById('result').innerText = '工期: ' + daysDifference + ' 天';
+        }
+    </script>
+</body>
+
+
+
 </html>

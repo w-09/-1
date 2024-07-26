@@ -403,58 +403,5 @@ h1 {
             document.getElementById('result').innerText = '工期: ' + daysDifference + ' 天';
         }
     </script>
-    
-    <script>
-        // 倒數計時功能
-        function updateCountdown() {
-            var targetDate = new Date('2027-1-14'); // 设定目标日期和时间
-            var now = new Date();
-            var timeDifference = targetDate - now;
-
-            // 如果时间已到
-            if (timeDifference <= 0) {
-                document.getElementById('countdown').innerText = "時間到囉";
-                return;
-            }
-
-            var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
-            // 更新倒计时显示
-            document.getElementById('countdown').innerText = 
-                `前鎮亞灣社宅工期剩餘時間: ${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒`;
-
-            // 每秒更新一次
-            setTimeout(updateCountdown, 1000);
-        }
-
-        // 调用函数启动倒计时
-        updateCountdown();
-
-        // 工期计算器功能
-        function calculateDuration() {
-            // 獲取日期
-            var startDate = new Date(document.getElementById('start-date').value);
-            var endDate = new Date(document.getElementById('end-date').value);
-
-            // 檢查日期是否有效
-            if (isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
-                alert("請輸入有效的日期");
-                return;
-            }
-
-            // 計算工期（天數）
-            var timeDifference = endDate - startDate;
-            var daysDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
-
-            // 顯示結果
-            document.getElementById('result').innerText = '工期: ' + daysDifference + ' 天';
-        }
-    </script>
 </body>
-
-
-
 </html>

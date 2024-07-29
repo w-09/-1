@@ -92,7 +92,11 @@
 <body>
     <p class="countdown-text">前鎮亞灣社會住宅新建工程(第一期) 
     完工時間 2027 年 1 月 14 日 工期倒數計時：</p>
-    <div id="countdown"></div>
+    <div id="countdown">
+    <p class="countdown-text">前鎮亞灣社會住宅新建工程(第一期) 
+    完工時間 2027 年 2 月 14 日 工期倒數計時：</p>
+    <div id="countdown">
+    </div>
     
 
     <!-- 按鈕列表 -->
@@ -153,6 +157,36 @@
         </div>
     </div>
 
+    <script>
+        function updateCountdown() {
+            // ：2027 年 1 月 14 日
+            const targetDate = new Date('2027-01-14T12:00:00Z');
+            const now = new Date();
+            const timeDiff = targetDate - now;
+
+            if (timeDiff <= 0) {
+                document.getElementById('countdown').innerHTML = '倒计时结束';
+                return;
+            }
+
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').innerHTML =
+                days + '天 ' +
+                hours + '時 ' +
+                minutes + '分 ' +
+                seconds + '秒 ';
+        }
+
+        // 更新倒计时
+        setInterval(updateCountdown, 1000);
+
+        // 初始化倒计时显示
+        updateCountdown();
+    </script>
     <script>
         function updateCountdown() {
             // ：2027 年 1 月 14 日
